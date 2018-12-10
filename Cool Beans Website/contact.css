@@ -1,0 +1,155 @@
+
+html{
+    font-family: 'Satisfy',cursive;
+}
+html, body {
+  width:100%;
+  margin: 0;
+}
+.nav img{
+  float:left;
+  height: 60px;
+  padding-top: 3px;
+  padding-left: 4px;
+
+}
+.nav{
+  border-bottom:2px solid black;
+  text-align: right;
+  height:70px;
+  line-height: 70px;
+  background-color: #0a3b00;
+  position: fixed;
+  left:0;
+  top:0;
+  width:100%;
+  z-index:998;
+
+}
+
+.menu{
+  margin: 0 30px 0 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color:white;
+  font-size: 1.2em;
+  margin: 0 10px;
+  line-height: 70px;
+  clear:right;
+  padding:5px;
+}
+.menu a:hover {
+  background-color:rgba(181, 182, 183,0.2);
+}
+
+
+label{
+  margin: 0 40px 0 0;
+  font-size:26px;
+  line-height:70px;
+  display: none;
+  width:26px;
+  float:right;
+}
+
+#toggle{
+  display:none;
+}
+
+
+
+main{
+font-family: "Oswald", Arial, sans-serif;
+margin-top: 70px;
+padding:20px;
+}
+
+h1{
+  font-family: "Open Sans", cursive;
+}
+
+a{
+  margin-bottom: 16px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 14px;
+}
+
+.bottom{
+  text-align: center;
+  padding:20px;
+  background-color: #0a3b00;
+  color:white;
+    font-family: "Oswald",monospace;
+}
+.bottom a {
+  text-decoration: none;
+  color:white;
+}
+
+
+@media only screen and (max-width: 500px){
+  main{
+    margin-top: 70px;
+  }
+  .nav label{
+    display:block;
+    color:white;
+    cursor:pointer;
+  }
+  .menu{
+    text-align:center;
+    width:100%;
+    display:none;
+  }
+  .menu a {
+    display:block;
+      border-bottom:1px solid #EAEAEB;
+      margin:0;
+      color:black;
+      background-color: white;
+  }
+  .menu a:hover{
+    background-color: #e8f7e9;
+  }
+
+  #toggle:checked + .menu{
+    display:block;
+  }
+
+
+}

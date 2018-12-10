@@ -1,0 +1,226 @@
+html{
+    font-family: 'Satisfy',cursive;
+}
+html, body {
+  width:100%;
+  margin: 0;
+  padding:0;
+}
+
+.mobile{
+  display:none;
+}
+.nav img{
+  float:left;
+  height: 60px;
+  padding-top: 3px;
+  padding-left: 4px;
+
+}
+.nav{
+  border-bottom:2px solid black;
+  text-align: right;
+  height:70px;
+  line-height: 70px;
+  background-color: #0a3b00;
+  position: fixed;
+  left:0;
+  top:0;
+  width:100%;
+  z-index:998;
+}
+
+.menu{
+  margin: 0 30px 0 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color:white;
+  font-size: 1.2em;
+  margin: 0 10px;
+  line-height: 70px;
+  clear:right;
+  padding:5px;
+}
+.menu a:hover {
+  background-color:rgba(181, 182, 183,0.2);
+}
+
+
+label{
+  margin: 0 40px 0 0;
+  font-size:26px;
+  line-height:70px;
+  display: none;
+  width:26px;
+  float:right;
+}
+
+#toggle{
+  display:none;
+}
+#desktop{
+    background-image: url("pics/mochaArt.jpg");
+}
+#wood{
+    background-image: url("pics/longWood.jpg");
+}
+.idk{
+  background-size: cover;
+  background-position: center center;
+  margin-top:70px;
+overflow: hidden;
+
+  padding
+}
+.idkContent{
+  background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+   padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 400px;
+      font-family: sans-serif;
+}
+.idkContent2{
+  background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 100%;
+   padding: 50px;
+   padding-top:70px;
+   padding-bottom: 70px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+      font-family: sans-serif;
+}
+#coolio{
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+}
+
+main{
+font-family: "Open Sans", Arial, sans-serif;
+padding-top: 30px;
+
+}
+
+.holiday{
+  display:flex;
+    flex-direction: column;
+}
+
+.holiday img{
+width:60%;
+margin:10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid gray;
+
+}
+
+.type{
+
+  text-align: center;
+}
+span{
+  font-family: 'Satisfy',cursive;
+}
+
+footer{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.findUs{
+  background: rgba(0, 0, 0, 0.2);
+  padding:20px;
+  margin:10px;
+}
+
+
+.bottom{
+  text-align: center;
+  padding:20px;
+  background-color: #0a3b00;
+  color:white;
+}
+.bottom a {
+  text-decoration: none;
+  color:white;
+}
+
+
+@media only screen and (max-width: 500px){
+  main{
+    margin-top: 70px;
+  }
+  label{
+    display:block;
+    color:white;
+    cursor:pointer;
+  }
+  .menu{
+    text-align:center;
+    width:100%;
+    display:none;
+  }
+  .menu a {
+    display:block;
+      border-bottom:1px solid #EAEAEB;
+      margin:0;
+      color:black;
+      background-color: white;
+  }
+  .menu a:hover{
+    background-color: #e8f7e9;
+  }
+
+
+  #toggle:checked + .menu{
+    display:block;
+  }
+  .mobile{
+    display: block;
+    margin-top: 70px;
+    background-image: url("pics/mochaArt.jpg");
+    background-size: cover;
+    background-position: center center;
+  overflow: hidden;
+
+  }
+  .mobileContent{
+    background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+     padding: 10px;
+     padding-right:20px;
+      text-align: center;
+      font-size: 30px;
+  }
+
+.idk{
+  display:none;
+}
+
+
+}
+
+@media only screen and (min-width:1000px){
+.holiday{
+  display:flex;
+  flex-direction: row;
+  width:100%
+}
+.holiday img{
+width:100%
+height:auto;
+}
+
+
+}
